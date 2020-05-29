@@ -369,9 +369,10 @@ li {
 
   .lookUp input[name="submit"] {
     width: 42vw;
-    height: 7vh;
+    height: 8vh;
     font-size: 20px;
     padding: 24px;
+    border: 1px solid blueviolet;
   }
 
   .welcome-page {
