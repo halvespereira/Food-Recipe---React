@@ -30,8 +30,8 @@ class App extends React.Component {
     e.preventDefault();
     e.persist();
 
-    const API_ID = "4174aa3d";
-    const API_KEY = "c4e6c8bc372e90dbf22fb030eac66b19";
+    const API_ID = "a2e3b42b";
+    const API_KEY = "1c745c5df6163f6999e524f014bf3890";
     const searchWord = e.currentTarget.input.value;
     const URL = `https://api.edamam.com/search?q=${searchWord}&app_id=${API_ID}&app_key=${API_KEY}&to=100`;
 
