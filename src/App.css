@@ -283,18 +283,19 @@ li {
     margin-bottom: 0px;
     background-color: #dbffff;
     width: 90vw;
-    height: 80vh;
+    height: 600px;
   }
 
   .lookUp input[name="input"] {
-    height: 4vh;
-    width: 34vw;
+    height: 40px;
+    width: 150px;
     transition: all 1s;
+    border: 1px solid blueviolet;
   }
 
   .lookUp input[name="submit"] {
-    width: 39vw;
-    height: 3vh;
+    width: 140px;
+    height: 60px;
     font-size: 20px;
     padding: 25px;
   }
