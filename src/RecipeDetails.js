@@ -1,14 +1,28 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import RecipeDetailsHeader from "./RecipeDetailsHeader";
 import RecipeDetailsLeft from "./RecipeDetailsLeft";
 import RecipeDetailsRight from "./RecipeDetailsRight";
 import RecipeDetailsDirectionLink from "./RecipeDetailsDirectionLink";
+import axios from "axios";
 
-const RecipeDetails = () => {
-  const location = useLocation();
-  const recipe = location.state;
+const API_ID = "4174aa3d";
+const API_KEY = "c4e6c8bc372e90dbf22fb030eac66b19";
+
+const RecipeDetails = ({ match }) => {
+  const [recipe, setRecipe] = useState(null)
+  const recipeUri = match.params.uri;
+  const URL = `https://api.edamam.com/search?r=${recipeUri}&app_id=${API_ID}&app_key=${API_KEY}`;
+
+  axios.get(`${URL}`).then((response) =>
+    setRecipe(response.data[0])
+  );
+
+  if (!recipe) {
+    return <div>Loading...</div>
+  }
+
   const nutrients = Object.entries(recipe.totalNutrients);
+
   return (
     <>
       <RecipeDetailsHeader recipe={recipe} />
