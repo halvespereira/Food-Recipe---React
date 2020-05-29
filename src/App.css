@@ -78,7 +78,7 @@
   box-shadow: 4px 4px 8px gray;
   margin-top: 29px;
 }
-#detailButton: active {
+#detailButton:active {
   rotate: 360deg;
 }
 #detailButton:hover {
