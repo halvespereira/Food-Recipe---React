@@ -15,8 +15,7 @@ export default function Recipe(props) {
       <button id="detailButton">
         <Link
           to={{
-            pathname: `/recipe/${recipe}`,
-            state: recipe,
+            pathname: `/recipe/${encodeURIComponent(recipe.uri)}`,
           }}
         >
           More Info{" "}
