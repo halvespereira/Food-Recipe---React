@@ -5,8 +5,8 @@ import RecipeDetailsRight from "./RecipeDetailsRight";
 import RecipeDetailsDirectionLink from "./RecipeDetailsDirectionLink";
 import axios from "axios";
 
-const API_ID = "4174aa3d";
-const API_KEY = "c4e6c8bc372e90dbf22fb030eac66b19";
+const API_ID = "a2e3b42b";
+const API_KEY = "1c745c5df6163f6999e524f014bf3890";
 
 const RecipeDetails = ({ match }) => {
   const [recipe, setRecipe] = useState(null)
