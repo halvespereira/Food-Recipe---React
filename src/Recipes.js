@@ -12,16 +12,14 @@ export default function Recipe(props) {
         {Math.floor(recipe.calories)}
       </p>
 
-      <button id="detailButton">
-        <Link
-          to={{
-            pathname: `/recipe/${recipe}`,
-            state: recipe,
-          }}
-        >
-          More Info{" "}
-        </Link>
-      </button>
+      <Link
+        to={{
+          pathname: `/recipe/${recipe}`,
+          state: recipe,
+        }}
+      >
+        <button id="detailButton">More Info </button>
+      </Link>
     </div>
   );
 }
