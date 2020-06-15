@@ -1,3 +1,18 @@
+### How long did you spend on the challenge?
+About 7 hours. 3 of which was polishing the UI.
+
+### What did you learn in this project?
+Fetching APIs, React Router, Data manipulation
+
+### What do you like about your implementation?
+That the user can choose what is displayed on the page. 
+Using React makes it easy to organize the code into different components. 
+
+### What you would change if you were going to do it again?
+I would make the UI a little smaller in size. 
+
+### How did you make your design decisions?
+Initially I made a sketch on a piece of paper and then I plyed with the colors a little bit. 
 
 
 ## Available Scripts
