@@ -15,13 +15,39 @@
 }
 
 .title {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 34px;
   color: blueviolet;
   background-color: #99f7f7;
   width: 100%;
   border-radius: 9px;
-  padding: 15px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.title h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 34px;
+  padding: 5px;
+}
+
+.title .favoriteIcon {
+  position: absolute;
+  right: 40px;
+  top: 26%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #dbffff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+  font-size: 19px;
+}
+
+.title .favoriteIcon:hover {
+  background-color: #fff;
 }
 
 .lookUp input[name="input"] {
@@ -115,7 +141,7 @@
 }
 
 .individual-recipe-div {
-  margin-bottom: 30px;
+  margin-bottom: 90px;
   background-color: #dbffff;
   width: 30vw;
   height: 600px;
@@ -164,6 +190,16 @@ strong {
   flex-direction: column;
   justify-self: center;
   align-items: center;
+  position: relative;
+}
+
+.recipeDetailsHeader .favoriteAddRemove {
+  position: absolute;
+  right: 40px;
+  top: 33%;
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
 }
 
 .recipeDetailDiv {
@@ -271,7 +307,7 @@ li {
   text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .recipes-div {
     display: grid;
     grid-template-columns: 1fr;
@@ -384,4 +420,8 @@ li {
     padding: 20px;
     transform: translateX(-5px);
   }
+}
+
+a:hover {
+  color: blueviolet;
 }

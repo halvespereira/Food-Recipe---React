@@ -20,6 +20,14 @@ class App extends React.Component {
         recipe: JSON.parse(localStorageRef),
       });
     }
+
+    const favoriteRecipesFromStorage = JSON.parse(
+      localStorage.getItem("favoriteRecipes")
+    );
+
+    if (!favoriteRecipesFromStorage) {
+      localStorage.setItem("favoriteRecipes", JSON.stringify([]));
+    }
   }
 
   componentDidUpdate() {
