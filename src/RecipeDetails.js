@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import RecipeDetailsHeader from "./RecipeDetailsHeader";
 import RecipeDetailsLeft from "./RecipeDetailsLeft";
 import RecipeDetailsRight from "./RecipeDetailsRight";
@@ -8,6 +8,11 @@ import { useLocation } from "react-router-dom";
 const RecipeDetails = () => {
   const location = useLocation();
   const recipe = location.state;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const nutrients = Object.entries(recipe.totalNutrients);
 
