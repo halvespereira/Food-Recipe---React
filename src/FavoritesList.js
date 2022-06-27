@@ -11,6 +11,7 @@ function FavoritesList() {
     if (favoritesList && favoritesList.length > 0) {
       setRecipes(favoritesList);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const recipeItem = (item) => {

@@ -21,6 +21,7 @@ const RecipeDetailsHeader = (props) => {
     if (currentRecipe) {
       setIsFavorite(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const recipe = props.recipe;
